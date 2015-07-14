@@ -1,11 +1,4 @@
 <?php
-//TUK NISHTO NE TRIABVA DA SE PISHE, SAMO SE POIASNIAVA KAK RABOTIAT NESHTATA
-//metodite se polzvat kato se podava za purvi parametur string sus samata zaiavka (parametrite v zaiavkata se pishat s dve tochki otpred ':'
-//podava se i vtori parametur, koito e masiv ot kliuch stoinosti, kato kliutchovete sa parametrite ot zaiavkata bez dvete tochki.
-//primer: (moje da se pogledne i UserModel.php).
-//$query = "SELECT name FROM book WHERE book_id = :id";
-//$queryParams = array ("id" => $id); 
-//$this->getSqlValue($query, $queryParams);
 
 class Database
 {
