@@ -8,18 +8,13 @@ class Database
 
     private $link = false;
 
-	//tova e t.nar. singleton (design pattern) 
-	//ideiata na singleton e da se suzdade edna instantsia na klasa i da se izpolzva vinagi tq, kato se izvikva klasut.
-	//tova stava kato se napravi private constructor, method getInstance, koito da izvikva constructura i statichen data member
 	private function __construct()
     {
-		//tezi promenlivi mogat da se slojat kato constanti v config.php, koito da se izvikva v init.php.
     	$dbHost = "localhost"; 
 		$dbName = "online_library";
 		$db_user = "root";
 		$db_pass = "";
 		try {
-			//tova pravi vruzkata s bazata danni i zapazva vruzkata v data member-a $link.
 			$this->link = new PDO("mysql:dbname={$dbName};host={$dbHost}", $db_user, $db_pass);
 			$this->link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			
@@ -27,10 +22,7 @@ class Database
 			throw $e;
 		}
     }
-	
-    //tozi klas proveriava dali e setnata statichnata promenliva $instance i, ako e setnata, q vrushta.
-    //ako ne e setnata izvikva constructura i zapazva novia object v statichnia data member $instance, za da moje da se preizpolzva.
-    
+
 	protected function getInstance()
     {
 		if (isset(self::$instance)) {
@@ -43,7 +35,6 @@ class Database
         return $instance;
     }
 
-	//tozi method se vika, kogato select zaivkata triabva da vurne samo edin red.
     function ExecuteSelectRow($sql, $bindParams = array())
     {
         $sth = $this->Execute($sql, $bindParams);
@@ -52,7 +43,7 @@ class Database
         }
         return;
     }
-	//tozi method se vika, kogato select zaiavkata vrushta mnogo redove.
+
     function ExecuteSelectArray($sql, $bindParams = array())
     {
         $sth = $this->Execute($sql, $bindParams);
@@ -62,7 +53,7 @@ class Database
         }
         return;
     }
-	//tozi method se vika, kogato select zaiavkata tiabva da vurene edna stoinost (po dadeno id da se vurne samo imeto na knigata)
+
     function getSqlValue($sql, $bindParams = array())
     {
         $sth = $this->Execute($sql, $bindParams);
@@ -72,7 +63,6 @@ class Database
         return;
     }
 
-	//tazi function se izpolza za vsichki zaiavki ot tip insert, update, delete
     function Execute($sql, $bindParams = array())
     {
 		$sth = $this->link->prepare($sql);
