@@ -1,0 +1,1135 @@
+body {
+	min-width: 1200px;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+* {
+	margin:0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+#backgroundHeader {
+	background-image: url(../images/backgroundImage.jpg);
+	background-size:100% 100%;
+	width:100%;
+	min-width:750px;
+	height:370px;
+	position:relative;
+}
+#headerTop {
+	width: 100%;
+	height: 77px;
+	border-bottom: 1px solid #C1B1B0;
+}
+.siteLogo {
+	font-family: fragmentCore;
+	color: #6C5B4C;
+  	float: left; 
+}
+#logo {
+	font-size: 45px;
+  	width: 40%;
+  	height: 80px;
+  	margin-top: 8px;
+  	margin-left: 140px;
+}
+#logoSmall {
+	font-size: 35px;
+	width: 14%;
+	height: 60px;
+	padding-top: 40px;
+	margin-left: 140px;
+}
+#secondWord {
+	font-weight: bold;
+	color: #4B3525;
+}
+@font-face {
+    font-family: fragmentCore;
+    src: url(../fonts/Fragmentcore.woff);
+}
+#loginForm {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float: right;
+	width: 40%;
+  	height: 80px;
+  	margin-bottom: 4px;
+  	padding-top: 20px;
+}
+#userEmail {
+	float: left;
+}
+.loginField {
+	float: left;
+	margin-right: 5px;
+	width: 150px;
+	height: 30px;
+	background-color: #f5f5f0;
+	border-top: 1px solid #ccccc6;
+	border-right: 1px solid #dfdcd5;
+	border-bottom: 1px solid #dbdbd5;
+	border-left: 1px solid #dfdcd5;
+	border-radius: 4px;
+	font-size: 13px;
+	outline: 0;
+}
+#userPassword {
+	float: left;
+}
+#rememberMe {
+	margin-top: 6px;
+	vertical-align: text-bottom;
+}
+.greyText {
+	color: #aaaaaa;
+	font-size: 12px;
+}
+#loginButton {
+	border: none;
+	outline: 0;
+	width: 60px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: #f5f5f5;
+	background-image: none;
+	background: -webkit-linear-gradient(top, #fff, #f1f1f1);
+	font-size: 13px;
+  	line-height: 18px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-weight: bold;
+}
+#headerBottom {
+	width: 100%;
+	height: 320px;
+}
+#registrationFormText {
+	float: right;
+	clear: both;
+	margin-right: 180px;	
+	color: #2F2F2C;
+	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+#registrationForm {
+	float: right;
+	clear: both;
+	display: block;
+  	margin-top: 5px;
+  	margin-left: 100px;
+  	margin-right: 180px;
+}
+.registrationFormInput {
+	width: 260px;
+	padding: 7px 5px;
+	border-top: 1px solid #a8aeac;
+  	border-right: 1px solid #cbcac6;
+  	border-bottom: 1px solid #e3dfdd;
+  	border-left: 1px solid #cdccc8;
+  	border-radius: 3px;
+  	margin: 0;
+  	font-size: 16px;
+  	font-weight: lighter;
+	margin-bottom: 4px;
+	outline: 0;
+}
+#registrationFormButton {
+	background: -webkit-linear-gradient(top, #fdefd4, #fdc154);
+	padding: 8px;
+  	border-top: 1px solid #ffd846;
+  	border-bottom: 1px solid #e1b927;
+  	border-left: 1px solid #f7cc2c;
+  	border-right: 1px solid #f7cc2c;
+  	border-radius: 6px;
+  	background-color: #fdd05f;
+  	background-image: none;
+  	background: linear-gradient(to bottom, #ffecc6, #feb93c);
+  	background: -webkit-linear-gradient(top, #ffecc6, #feb93c);
+  	font-size: 18px;
+  	font-weight: bold;
+  	line-height: 22px;
+  	box-shadow: 0px 3px 3px #aaaa99;
+  	width: 85px; 	
+  	outline: 0;
+}
+#registrationFormButton:hover {
+	color: black;
+	background: -webkit-linear-gradient(top, #fdefd4, #fdc154);
+  	cursor: pointer;
+  	background-color: #f0ede5;
+  	background: linear-gradient(to bottom, #FDE3B2, #FDC868);
+}
+#socialNetworkButtonsBox {
+	background-image: url(../images/blackBox.png);
+	position: absolute;
+	bottom: 0;
+  	right: 0;
+  	width: 283px;
+  	height: 32px;
+  	margin: 0 18px 0 0;
+  	vertical-align: middle;
+  	text-align: center;
+  	padding: 13px 0 5px 0;
+  	background-position: 0px 0px;
+  	background-repeat: no-repeat;
+  	margin-right: 182px;
+}
+ul {
+	list-style-type: none;
+}
+#usingNetwork {
+	float: left;
+	color: #F4F4F4;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding-top: 4px;
+}
+#firstWord {
+	float: left;
+	padding-left: 45px;
+  	padding-right: 5px;
+  	padding-top: 3px;
+	font-style: italic;
+	color: #F4F4F4;
+	font-size: 14px;
+}
+.fbLogin {
+	float:left;
+	margin-left: 10px;
+}
+#content {
+	clear: both;
+	min-width: 100%;
+	min-height: 500px;
+	margin-bottom: 60px;
+}
+#lineImage img{
+	width: 100%;
+	height: 20px;
+}
+#whatToRead {
+	float: left;
+	margin-left: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Georgia, "Times New Roman", serif;
+  	line-height: 18px;
+  	padding: 0;
+  	font-size: 20px;
+  	font-weight: normal;
+}
+p {
+	float: left;
+	clear: both;
+	width: 270px;
+	text-align: justify;
+	margin-left: 80px;
+	font-family: Georgia, "Times New Roman", serif;
+  	line-height: 18px;
+  	padding: 0;
+  	font-size: 13px;
+}
+#leftContent {
+	float: left;
+	clear: both;
+}
+.row {
+	float: left;
+	border: 1px #F4F2E9 solid;
+	background-color: #F4F2E9;
+	margin-left: 80px;	
+	width: 600px;
+	height: 200px;
+	background-position: bottom;
+  	background-repeat: repeat-x;
+	clear: both;
+	padding: 15px 0 20px 10px;
+  	background-image: url(../images/recommendedBooksInnerLine.png);
+  	
+}
+#firstRow {
+	margin-top: 20px;
+  	border-top-left-radius: 10px;
+  	border-top-right-radius: 10px;
+}
+#secondRow {
+  	border-bottom-left-radius: 10px;
+  	border-bottom-right-radius: 10px;
+}
+.recommendedBooksHeader {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 20px;
+	padding-left: 20px;
+}
+.recommendedBooksImages {
+	width: 100px;
+	height: 140px;
+	margin: 30px 0 0 15px;
+}
+#searchBooksBox {
+	float: left;
+	margin-left: 30px;
+	margin-top: 50px;
+	min-width: 500px;;
+	min-height: 350px;
+}
+#searchText {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 15px;
+	margin-right: 15px;
+}
+.searchF {
+	font-family: Georgia, "Times New Roman", serif;
+  	padding: 5px;
+  	border-radius: 5px;
+  	background-color: white;
+  	border: 1px solid #999;
+  	outline: 0;
+}
+#searchBox {
+	width: 270px;
+	height: 25px;
+}
+.left {
+	float: left;
+}
+.genres {
+	margin-right: 22px;
+	margin-top: 10px;
+}
+.actionLinkLite {
+	color: #666600;
+	font-size: 15px;
+}
+.actionLinkLite:hover {
+	text-decoration: underline;
+}
+.actionLink {
+	font-weight: bold;
+}
+#tree {
+	width: 100%;
+	text-align: center;
+}
+#tree img {
+		margin-top: 45px;
+}
+#clear {
+	clear: both;
+}
+.footer {
+	position: absolute;
+  	width: 100%;
+  	margin-bottom: 0;
+}
+#commonFooter {
+	background-image: url(../images/footerImage.png);
+  	height: 48px;
+}
+#signInFooter {
+	background-image: url(../images/bookrow.jpg);
+	height: 55px;
+}
+#smallHeader {
+	background-image: url(../images/smallHeader.jpg);
+	width:100%;
+	min-width:750px;
+	height: 90px;
+	position:relative;
+	border-bottom: 1px solid #E7E3D1;
+}
+#searchSmall {
+	float: left;
+  	width: 200px;
+  	height: 25px;
+  	line-height: 13px;
+}
+#searchBooks {
+	padding-top: 52px;
+	margin-right: 20px;
+}
+#buttonsMenu {
+	padding-top: 55px;
+}
+.menuButtons {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #3F2918;
+	margin-left: 13px;
+}
+.menuButtons:hover {
+	text-decoration: underline;
+}
+.signOutButton {
+	 float: right;
+ 	 margin-right: 20px;
+}
+.searchField {
+	display: inline-block;
+	border: 1px solid #EBE9D7;
+	margin: 0;
+  	padding: 0;
+  	border-radius: 5px;
+  	background-color: white;
+}
+.searchField input {
+	border: none;
+	padding: 0;
+	padding-left: 5px;
+}
+.searchField button {
+  float: right;
+  height: 20px;
+  border: none;
+  background: none;
+  padding-top: 3px;
+  padding-right: 5px;
+  outline: 0;
+}
+
+#signInHeaderLogo {
+	float: left;
+	font-size: 35px;
+	margin-left: 20px;
+  	margin-top: 5px;
+}
+#signinButton {
+	float: right;
+	margin-right: 30px;
+  	margin-top: 20px;
+}
+.memberText {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	padding-right: 10px;
+}
+.signInLoginButton {
+	background-color: #f6f6ee;
+  	border: 1px solid #9d8a78;
+  	color: #3A3A39;
+  	border-radius: 3px;
+  	font-size: 13px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-weight: bold;
+  	cursor: pointer;
+  	line-height: 1;
+  	padding: 8px 12px;
+}
+.contentBox {
+  	border: 1px solid #d0d0c8;
+  	background-color: white;
+  	border-radius: 4px;
+  	-moz-box-shadow: 0px 1px 1px #d0d0c8;
+  	-webkit-box-shadow: 0px 1px 1px #d0d0c8;
+  	box-shadow: 0px 1px 1px #d0d0c8;
+  	padding: 28px 10px 34px 10px;
+  	width: 600px;
+  	margin: 0 auto;
+  	text-align: center;
+  	min-height: 400px;
+}
+.messageTextBox {
+	display: inline-block;
+    color: #333;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 30px 0;
+    padding: 7px 14px;
+   
+}
+.problemMessage {
+	display: inline-block;
+	padding: 5px;
+	background-color: #fff7c9;
+	 -webkit-box-shadow: 0px 1px 1px 0px #d0d0c8;
+    -moz-box-shadow: 0px 1px 1px 0px #d0d0c8;
+    box-shadow: 0px 1px 1px 0px #d0d0c8;
+}
+.loginFields {
+    font-size: 15px;
+    padding: 10px 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 2px 2px #333333 #cccccc;
+    -webkit-box-shadow: 0px 2px 2px #333333 #cccccc;
+    box-shadow: 0px 2px 2px #333333 #cccccc;
+    background-color: #ededed;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 300px;
+    color: #333;
+    box-sizing: border-box;
+    outline: 0;
+}
+.loginText {
+	float: left;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+  	text-align: left;
+  	padding-left: 150px;
+  	padding-top: 10px;
+  	color: #333;
+  	font-weight: bold;
+  	width: 100%;
+}
+.fieldRememberMe {
+	float: left;
+	margin: 10px 0 0 150px;
+}
+.rememberMeText {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.userLoginButton {
+	float: left;
+	margin: 20px 0 0 150px;
+	font-size: 16px;
+}
+.container {
+	margin-top:20px;
+	min-height: 500px;
+}
+.leftContainer {
+	/*background-color: yellow;*/
+	float: left;
+	clear: both;
+	width: 42%;
+	margin-left: 150px;
+}
+#lContent {
+	width: 46%;
+	margin-left: 80px;
+}
+#bookPreview {
+	display: inline-block;
+  	width: 100%;
+}
+.rightContainer {
+	/*background-color: red;*/
+	float: right;
+	min-width: 35%;
+	margin-right: 45px;
+}
+.textLine {
+	width: 300px;
+  	height: 25px;
+}
+.imageContainer {
+	float: left;
+	margin-bottom: 20px;
+}
+#previewGenres {
+	float: left;
+	clear: both;
+}
+.bookDescription {
+	width: 65%;
+	float: left;
+	margin-left: 20px;
+}
+.titleOfTheBook {
+	margin-bottom: 0;
+  	line-height: 1.1;
+  	width: 100%;
+  	font-size: 180%;
+  	font-style: normal;
+  	font-family: Georgia, "Times New Roman", serif;
+  	color: #382110;
+  	font-size: 20px;
+}
+.description {
+	text-align: justify;
+	padding-top: 20px;
+}
+.authorsName {
+	color: #666600;
+	font-size: 14px;
+}
+
+#commentText {
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+textarea {
+	font-family: monospace;
+  	border-color: rgb(169, 169, 169);
+  	width: 462px;
+  	height: 132px;
+  	outline: 0; 	
+}
+#commentButton {
+	-webkit-appearance: none;
+  	display: inline-block;
+  	color: #181818;
+  	background-color: #f6f6ee;
+  	border: 1px solid #9d8a78;
+  	border-radius: 3px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-weight: bold;
+  	font-size: 12px;
+  	cursor: pointer;
+  	line-height: 1;
+  	padding: 6px 10px;
+  	margin-bottom: 30px;
+}
+.comment {
+	font-weight: bold;
+}
+.brownLine {
+	width: 100%;
+  	background: #EBE8D5;
+  	border: 1px solid #ddd;
+  	padding: 0px 4px;
+  	margin-top:10px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.infoText {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 12px;
+}
+.userText {
+	color: #8E8D3F;
+}
+.fullWidth {
+	width: 100%;
+	display: inline-block;
+}
+.textContent {
+	background-image: url(../images/similarBooksLine.jpg);
+	height: 23px;
+	margin-top: 15px;
+	padding: 5px 0 0 10px;
+	border-radius: 5px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 14px;
+}
+.authorInfo {
+	width: 300px;
+	margin: 7px 0 0 5px;
+	text-align: justify;
+}
+.smallBooksRow .books img {
+	margin: 20px 6px 20px 7px;
+}
+.textRightContainer {
+	width: 300px;
+}
+.textLeftContainer {
+	margin: 13px 0 0px 0px;
+	width: auto;
+}
+.genreDescription {
+	width: auto;
+	text-align: justify;
+	font-size: 15px;
+	margin: 15px 0 20px 5px;
+}
+.bigBoxForBooks {
+	width: 100%;
+}
+.books img {
+	float: left;
+	margin: 20px 0 0 19px;
+}
+.firstBook img {
+	margin-left: 0;
+}
+.bigBoxForBooks .booksRow .books.firstBook {
+	  display: inline-block;
+	  float: left;
+	  margin-left: 14px;;
+}
+.topContent {
+	width: 76%;
+	height: 40px;
+	padding-top: 10px;
+	margin-left: 150px;
+	display: inline-block;
+	/*background-color:#000000;*/
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 20px;
+	color: #6A6A07;
+	border-bottom: 1px solid #F0EDDF;
+}
+#bookshelvesText {
+	color: #B6B6B6;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+#myBooksMenu {
+	float: left;
+	clear: both;
+	/*background-color: yellow;*/
+	width: 14%;
+	height: 300px;
+	margin-left: 150px;
+	border-right: 1px solid #DFDFDF;
+}
+
+#myBooksTable {
+	float: right;
+	/*background-color: red;*/
+	width: 61%;
+	margin-right: 153px;
+}
+#myBooksMenu li a {
+	color: #215625;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-size: 12px;
+}
+.myTable {
+	width: 100%;
+	border: 0;
+	border-collapse: collapse;
+	text-align: left;
+}
+#myTable thead tr th {
+	border-bottom: 2px solid #EEECDC;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 12px;
+}
+#cover {
+	width: 8%;
+}
+#title {
+	width: 23%;
+}
+#author {
+	width: 22%;
+}
+#avgRaiting {
+	width: 4%;
+}
+#raiting {
+	width: 15%;
+}
+.stars {
+	padding-left: 21px;
+}
+#status {
+	width: 24%;
+}
+#deleteButton {
+	width: 3%;
+}
+.myTable tbody tr td {
+	border-bottom: 1px solid #F4F4F4;
+	padding-top: 7px;
+	font-family: Georgia, "Times New Roman", serif;
+	vertical-align: top;
+}
+.textColors {
+	color: #666600;
+	font-size: 12px;
+}
+.raitingPoints {
+	font-size: 12px;
+}
+.userProfileContent {
+	width: 84%;
+}
+.usersName {
+	color: #382110;;
+	font-size: 20px;
+}
+.editProfileLink {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 11px;
+	color:#666600;
+}
+#leftCont {
+	border-right: 1px solid #E6E6E6;
+}
+#myProfileLeftContent {
+	min-width: 45%;
+}
+#myProfilePicture {
+	float: left;
+	width: 22%;
+}
+#myProfileBoxInfo {
+	float: left;
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+	width: 72%;
+	min-height: 37px;
+	margin-left: 10px;
+	padding: 5px;
+}
+.country {
+	padding-right: 100px;
+}
+.city {
+	padding-right: 125px;
+}
+.age {
+	padding-right: 126px;
+}
+.showInfo {
+	float: left;
+	font-weight: normal;
+}
+.userBoockshelves {
+	margin-top: 30px;
+	width: 96%;
+}
+.userBoockshelvesContent {
+	margin-top: 20px;
+}
+.userBoockshelvesContent td {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+.userBoockshelvesContent td a {
+	color: #215625;
+}
+#read {
+	width: 20%;
+}
+#reading {
+	width: 30%;
+}
+#wantToRead {
+	width: 20%;
+}
+.tableMyProfile tbody tr td {
+	border-top: 1px solid #F4F4F4;
+	border-bottom: 1px solid #F4F4F4;
+	padding-top: 7px;
+	font-family: Georgia, "Times New Roman", serif;
+	vertical-align: top;
+}
+.recentlyAddedBooksContent {
+	float: left;
+	width: 70%;
+}
+.booksContentImage {
+	float: left;
+	min-width: 50px;
+	width: 18%;
+}
+.bookContentTitle {
+	font-size: 16px;
+}
+.byClass {
+	color:#000000;
+}
+
+.changeProfilePicture {
+	width: 45%;
+  	float: right;
+  	padding-top: 20px;
+}
+.editProfileButtons {
+	-webkit-appearance: none;
+  	display: inline-block;
+  	color: #181818;
+  	background-color: #f6f6ee;
+  	border: 1px solid #9d8a78;
+  	border-radius: 3px;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-weight: bold;
+  	text-decoration: none;
+  	cursor: pointer;
+  	line-height: 1;
+  	outline: 0;
+}
+#uploadPhotoButton {
+	margin-top:7px;
+	font-size: 12px;
+	padding: 4px 11px;
+}
+#profilePictureCont {
+	margin-left: 38%;
+}
+#saveProfileSettingsButton {
+	margin-left: 149px;
+	float: left;
+	margin-top: 20px;
+	font-size: 13px;
+	padding: 8px 15px;
+}
+#containerHolder label {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size:12px;
+}
+#requiredField {
+	color: rgb(233, 19, 19);
+}
+.fieldSize {
+	width: 200px;
+	height: 15px;
+	outline: 0;
+}
+#whatYouLike {
+	height: 20px;
+}
+.removeOutline {
+	outline: 0;
+}
+#myProfileBoxInfo tr td {
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: #382110;
+}
+#myProfileBoxInfo tr td.infoUser {
+	font-weight: normal;
+	padding-left: 100px;
+}
+.userName {
+	margin-right: 10px;
+	padding-top: 4px;
+	color: #523D2D;
+	font-family: fragmentCore;
+	font-size: 17px;
+	font-weight: bold;
+}
+.progressIndicator, .buttonOptions {
+	display:none;
+}
+/*div.statusButton{
+	width:150px;
+}*/
+div.userBookStatus {
+	margin-bottom: 15px;
+	width:120px;
+	float:left;
+}
+div.userBookOptions {
+	width:30px;
+	float:left;
+}
+div.userBookStatus button {
+	color: white;
+  	background-color: #29722e;
+	width:100%;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	background-image: url(../images/buttonBackground.svg);
+	background-size: 100%;
+  	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #71b258), color-stop(100%, #29722e));
+  	background-image: -moz-linear-gradient(#71b258, #29722e);
+  	background-image: -webkit-linear-gradient(#71b258, #29722e);
+  	background-image: linear-gradient(#71b258, #29722e);
+  	-webkit-font-smoothing: antialiased;
+  	height: 27px;
+  	padding: 5px 0 5px 5px;
+  	box-sizing: border-box;
+  	border: 0;
+  	cursor: pointer;
+  	display: block;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-style: normal;
+  	font-weight: bold;
+  	font-size: 13px;
+  	text-align: left;
+  	outline: 0;
+}
+div.userBookStatus button:hover {
+	background-image: none !important;
+	background-color: #548E58;
+}
+div.userBookOptions button {
+	width:100%;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	background-color: #29722e;
+	background-image: url(../images/buttonBackground.svg);
+	background-size: 100%;
+  	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #71b258), color-stop(100%, #29722e));
+  	background-image: -moz-linear-gradient(#71b258, #29722e);
+  	background-image: -webkit-linear-gradient(#71b258, #29722e);
+  	background-image: linear-gradient(#71b258, #29722e);
+  	-webkit-font-smoothing: antialiased;
+  	height: 27px;
+  	padding: 5px 0 5px 5px;
+  	box-sizing: border-box;
+  	border: 0;
+  	cursor: pointer;
+  	display: block;
+  	border-left: 1px solid #25642A;
+  	outline: 0;
+}
+div.userBookOptions button img {
+	margin-left: -3px;
+}
+div.userBookOptions li:hover {
+	background-color: #E0E0EB;
+}
+div.buttonOptions {
+	text-align:left;
+	margin-left: -145px;
+	background: #ffffff;
+  	border-color: #cccccc;
+  	border-radius: 3px;
+  	border-style: solid;
+  	border-width: 1px;
+  	-moz-box-shadow: 0 3px 4px -3px rgba(0,0,0,0.5);
+  	-webkit-box-shadow: 0 3px 4px -3px rgba(0,0,0,0.5);
+  	box-shadow: 0 3px 4px -3px rgba(0,0,0,0.5);
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-size: 14px;
+  	padding: 2px;
+  	position: absolute;
+  	text-align: center;
+  	z-index: 1001000;
+  	display: none;
+  	max-height: 250px;
+  	overflow: hidden;
+  	text-align: left;
+}
+div.buttonOptions ul{
+	width:170px;
+	padding:10px 0 20px 5px;
+	list-style-type: none;
+	  padding-left: 10px;
+}
+div.buttonOptions ul li{
+	cursor: pointer;
+	  padding-bottom: 4px;
+}
+div.buttonOptions ul lihover, ul li:focus {
+	color:red;
+}
+.rateThisBookText {
+	padding-left: 4px;
+	float: left;
+  	color: #aaaaaa;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font-size: 12px;
+}
+div.stars {
+ 	display: inline-block;
+ 	padding: 5px 0 0 5px;
+}
+.starsInMyProfile {
+	float: right;
+  	padding-right: 93px;
+}
+input.star { 
+	display: none; 
+}
+
+label.star {
+	float: right;
+	padding:1px 1px 3px 0;
+  	font-size: 17px;
+  	color: #3F2918;
+  	transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FB9A55;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #FB9A55;
+ }
+
+input.star-1:checked ~ label.star:before { 
+	color: #FB9A55; 
+}
+
+label.star:hover { 
+	transform: rotate(-15deg) scale(1.3); 
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+#readerPdfContainer {
+	width: 60%;
+	height: 750px;
+	margin: 20px 0 0 20%;
+}
+.readTheBook {
+	border: 1px solid #132F12;
+  	background-color: #2F5930;
+  	background: linear-gradient(to bottom, #436b47, #1f4720);
+  	background: -ms-linear-gradient(top, #436b47, #1f4720);
+  	background: -moz-linear-gradient(top, #436b47, #1f4720);
+  	background: -o-linear-gradient(top, #436b47, #1f4720);
+  	background: -webkit-linear-gradient(top, #436b47, #1f4720);
+  	text-shadow: 0px -1px -1px #333;
+  	color: white;
+  	padding:3px;
+  	border-radius: 3px;
+}
+.readTheBook:hover {
+	background: #597A59;
+}
+.indexMenuContainer {
+	display: block;
+	float: right;
+	position: relative;
+}
+.indexMenuContainer a{
+	display: block;
+	height: 40px;
+}
+.indexMenu{
+	width: 90%;
+	position: absolute;
+	background-color: #F4F3E8;
+	display:block;
+ 	 text-align: center;
+ 	 z-index: 1001000;
+  	max-height: 250px;
+  	overflow: hidden;
+}
+.indexMenu li a {
+	color: #523D2D;
+	font-family: fragmentCore;
+	font-size: 15px;
+	font-weight: bold;
+}
+.indexMenu li {
+	padding: 4px 4px 2px 4px;
+}
+
+.indexMenuContainer > .indexMenu {
+	display:block;
+ 	max-height: 0;
+ 	overflow: hidden;
+ 	-webkit-transition: max-height 0.8s;
+ 	-moz-transition: max-height 0.8s;
+ 	transition: max-height 0.8s;
+}
+.indexMenuContainer:hover  > .indexMenu {
+ 	max-height: 400px;
+}
+
+.optionsButton + .buttonOptions {
+	display:block;
+ 	max-height: 0;
+ 	overflow: hidden;
+ 	-webkit-transition: max-height 0.8s;
+ 	-moz-transition: max-height 0.8s;
+ 	transition: max-height 0.8s;
+ 	  visibility: hidden;
+}
+.optionsButton:hover  + .buttonOptions,
+.optionsButton  + .buttonOptions:hover
+ {
+ 	max-height: 400px;
+ 	  visibility: visible;
+}
